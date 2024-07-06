@@ -1,6 +1,6 @@
 # Spring
 
-##git command
+#git command
 1. git init
 2. git add .
 3. git commit -m "Initial commit"
@@ -9,7 +9,7 @@
    This will create a new branch called master on your GitHub repository and push all the files to it.
 
    
-Spring Configuration 
+#Spring Configuration 
 This repository contains a basic Spring configuration file, which is used to define the structure and components of a Spring-based application.
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -27,7 +27,7 @@ This repository contains a basic Spring configuration file, which is used to def
 
 This configuration file defines the necessary namespaces and schema locations for a Spring application. It also includes a single, empty <bean> element, which can be used to define a Spring bean.
 
-##Maven Dependency
+#Maven Dependency
 This project relies on the Spring Context dependency, which can be added to a Maven project using the following link:
 
 https://mvnrepository.com/artifact/org.springframework/spring-context
