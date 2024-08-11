@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 
+    using xml
+    <bean class = "com.spring.lifecycle.Arman" name = "arman1" init-method = "init" destroy-method = "destroy">
+    	<property name = "rollno" value = "63" />
+    </bean>
+	
+	life cycle using interface
+    <bean class = "com.spring.lifecycle.Hotel" name = "hotel1" >
+    	<property name = "bill" value = "63.34" />
+    </bean>   
+    
+      -->
+    
+    <!-- using annotation --> <!-- just need to add java 8 dependency -->
+   <!-- <context:annotation-config/>   --> 
+        <bean class = "com.spring.lifecycle.AnnotationExample" name = "sub1" >
+    	<property name = "subject" value = "Spring" />
+    </bean> 
+    <bean class = "package org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+    
+</beans>
